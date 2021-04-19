@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hoc html từ đầu</title>
+	<link rel="stylesheet" href="css/reset.css" media="screen" >
+	<link rel="stylesheet" href="css/style.css" media="screen" >
+	
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/e7f1eedc82.js" crossorigin="anonymous"></script>
+	<!-- <script src="js/vendor/prefixfree.min.js"></script> tu dong tao tien to prefix */-->
+</head>
+<body>
+	<header>
+	<!-- Begin : title -->
+		<h1>Learning HTML</h1>
+		<p>A responsive website tutorial</p>
+	<!-- end : title -->
+	</header>
+	<!-- tao thanh dieu huong -->
+	<nav>
+		<!-- Begin : horizontal Navigation bar -->
+		<ul>
+			<li><a href="#">Home</a></li><!-- tao thanh cai link -->
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+		<!-- end : horizontal Navigation bar -->
+	</nav>
+<section class="container">
+	<!-- Begin: slider -->
+		<article id="slider_content">
+		  <h3>Lorem</h3>
+		  <p>Miss you Na <a href="https://www.google.com.vn/" class="responsive_button">More...</a></p>
+		  <p class="button" href="https://www.google.com.vn/">More</p>
+		</article>
+		<div id="slider">
+			<figure><!--  để đánh dầu một bức ảnh trong tài liệu: -->
+				<img  src="images/1.jpg" height="500px" >
+				<img  src="images/2.jpg" height="500px" >
+				<img  src="images/3.jpg" height="500px" >
+				<img  src="images/1.jpg" height="500px" >
+			</figure>
+		</div>
+	<!-- End : slider -->
+</section>
+
+<!-- footer -->
+<section id="spacer">
+	<!-- Begin: search bar -->
+	<p>Hom nay ta bi lam sao ay</p>
+	<div class="search">
+		<form action="#">
+			<input type="text" name="sitesearch" value="Enter a word...">
+			<input type="submit" class="button1" value="search"> 
+		</form>
+	</div>
+	
+	<!-- End: search bar -->
+</section>
+<section id="three_Columns">
+	<i class="fas fa-poo fa-sm"></i>
+	<!-- Begin: cot 1 -->
+	<article>
+	<h3>Love story</h3>
+	<p>
+		Romeo, take me somewhere we can be alone
+		<br>
+		I'll be waiting, all there's left to do is run
+	</p>
+	</article>
+	<!-- End: cot 1 -->
+	<!-- Begin: cot 2 -->
+	<article>
+	<i class="fas fa-poo fa-sm"></i>
+	<h3>Love story</h3>
+	<p>
+		You'll be the prince and I'll be the princess<br>
+		It's a love story, baby, just say, "Yes"
+	</p>
+	</article>
+	<!-- End: cot 2 -->
+	<!-- Begin: cot 3 -->
+	<article>
+	<i class="fas fa-poo fa-sm"></i>
+	<h3>Love story</h3>
+	<p>
+		And say, "Hello"<br>
+		Little did I know
+	</p>
+	</article>
+	<!-- End: cot 3 -->
+	<div class="clear"></div>
+</section>
+<section id="four_column">
+	<h2>
+		Lorem
+	</h2>
+	<!-- Begin: column 1 -->		
+	<article class="img-item">
+	    <figure>
+			<a href="#img1" title="dsad">
+				<div class="zoomin"></div>
+				<img alt="Chan" src="images/1.jpg" width="200px" >
+			</a>
+	     <figcaption>
+		   <strong>
+		    	Photo by: Na
+		   </strong>
+		   DMmmmm
+		 </figcaption>
+		</figure>
+	</article>
+	<!-- End: cot 1 -->
+	<!-- Begin: cot 2 -->
+<article class="img-item">
+	    <figure>
+			<a href="#img2" title="dsad">
+				<div class="zoomin"></div>
+				<img alt="Chan" src="images/2.jpg"  width="200px">
+			</a>
+	     <figcaption>
+		   <strong>
+		    	Photo by: Na
+		   </strong>
+		   DMmmmm
+		 </figcaption><!-- Nhap 1 mo ta co the gan hinh anh minh hoa chat che vs noi dung -->
+		</figure>
+	</article>
+	<!-- End: cot 2 -->
+	<!-- Begin: cot 3 -->
+	<article class="img-item">
+	    <figure>
+			<a href="#img3" title="dsad">
+				<div class="zoomin"></div>
+				<img alt="Chan" src="images/3.jpg"  width="200px">
+			</a>
+	     <figcaption>
+		   <strong>
+		    	Photo by: Na
+		   </strong>
+		   DMmmmm
+		 </figcaption>
+		</figure>
+	</article>
+	<!-- End: cot 3 -->
+	<!-- Begin: cot 4 -->
+	<article class="img-item">
+	    <figure>
+			<a href="#img4" title="dsad">
+				<div class="zoomin"></div>
+				<img alt="Chan" src="images/4.jpg"  width="200px">
+			</a>
+	     <figcaption>
+		   <strong>
+		    	Photo by: Na
+		   </strong>
+		   DMmmmmmmm
+		 </figcaption>
+		</figure>
+	</article>
+	<!-- End: cot 4 -->
+</section>
+<section id="lightbox">
+	<!-- Begin: lightbox column 1 -->
+		<a href="#_" class="lightbox" id="img1">
+			<img src="images/1.jpg">
+		</a>
+	<!-- End: lightbox column 1 -->
+	<!-- Begin: lightbox column 2 -->
+		<a href="#_" class="lightbox" id="img2">
+			<img src="images/2.jpg">
+		</a>
+	<!-- End: lightbox column 2 -->
+	<!-- Begin: lightbox column 3 -->
+		<a href="#_" class="lightbox" id="img3">
+			<img src="images/3.jpg">
+		</a>
+	<!-- End: lightbox column 3 -->
+	<!-- Begin: lightbox column 4 -->
+		<a href="#_" class="lightbox" id="img4">
+			<img src="images/4.jpg">
+		</a>
+	<!-- End: lightbox column 4 -->
+</section>
+<section id="multiple_columns">
+	<!--Begin column 1-->
+	<section class="column1">
+		<article>
+			<h2>Sorry Hoà</h2>
+			<p>
+				Cậu biết không tôi là 1 còn người lười biến nên viết tôi lái xe ra ngoài kia chở cậu là điều 
+				hầu như không.</p>
+			<p> Nên là cậu tự đi vào đi nhá < 3;</p>
+		</article>
+	</section>
+	<!--End column 1-->
+	<!--Begin column 2-->
+	<section class="column2">
+		<!--Begin row 1-->
+		<article class="row">
+			<img src="images/icon1.jpg" class="Smile">
+			<p>Sorryyyy</p>
+		</article>
+		<!--End row 1-->
+		<!--Begin row 2-->
+		<articl class="row">
+			<img src="images/icon3.jpg" class="sad">
+			<p>Sorrrrryyyy</p>
+		</article>
+		<!--End row 2-->
+	</section>
+</section>
+<footer>
+	<!-- column 1-->
+	<section id="extra_content">
+		<section class="column1">
+			<h3>Lorem</h3>
+			<p>EMMET là bộ phím tắt, quy tắc và các phím tắt nhằm giảm tối thiểu thời gian của các lập 
+				trình viên trong quá trình viết code. 
+				EMMET có thể có sẵn trên các code editor như PhpStorm hoặc bạn cần cài plugin</p>
+		</section>
+		<section class="column2">
+			<h3>Ngày Sinh</h3>
+			<ul class="ngaysinh">
+				<li><p>20/06/2001</p></li>
+				<li><p>23/08/2001</p></li>
+				<li><p>31/08/2001</p></li>
+				<li><p>18/12/2001</p></li>
+				<li><p>iDontKnow</p></li>
+			</ul>
+		</section>
+		<section class="column3">
+			<h3>Hình miêu tả</h3>
+			<section class="row">
+				<img src="images/anh1.jpg" alt="">
+				<p>Cafe Thi</p>
+	    	</section>
+			<section class="row">
+				<img src="images/anh4.jpg" alt="">
+				<p>Công viên hoàn văn thụ</p>
+			</section>
+			<section class="row">
+				<img src="images/anh3.jpg" alt="">
+				<p>Ảnh mạng</p>
+			</section>
+		</section>
+	</section>
+	<section id="page_owner_info">
+		<div class = "wrapper">
+			<!--Begin: Copyright-->
+			<div class="copyright"> 
+				@Copyright 2020 by <a href="https://www.facebook.com/PhamKhanh.1382001">"Toi Khong An Dau"</a>. All Right Reserved.</p>
+			</div>
+			<!--End: Copyright-->
+			<!--Begin: Icon Logo-->
+			<div class="social">
+				<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+			</div>
+			<!--End: Icon Logo-->
+		</div>
+	</section>
+</footer>
+</body>
+</html>
