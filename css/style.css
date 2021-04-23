@@ -57,7 +57,7 @@ header{
 	position:relative;
 	width:auto;
 	max-width:980px;/*kich thuoc tu dieu chinh max la 980px*/
-	margin: 0px auto 20px 150px;/*vi tri cach le*/
+	margin: 5px auto 15px 35px;/*vi tri cach le*/
 }
 header h1{
 	margin : 35px 0 0 0px ;
@@ -97,6 +97,9 @@ nav > ul > li > a{
 
 nav > ul > li:hover >a{/*di chuot vao se doi mau */
 	color: #777;
+}
+nav > input{
+	display: none;
 }
 /*SLideshow*/
 /* ten class co dau ., con ten dinh danh thi co dau # */
@@ -213,8 +216,8 @@ div#slider figure img{
 #three_Columns{
 	width:auto;
 	max-width: 980px;
-	margin:0 auto;
-	padding: 70px 0 45px 0;
+	margin:0 200px;
+	padding: 70px 0 45px 14px;
 }
 
 #three_Columns article{
@@ -304,6 +307,8 @@ figcaption strong{
 	max-height: 90%;
 	margin-top: 89px;
 }
+/*nav bar*/
+
 /*MultiColumn*/
 #multiple_columns{
 	line-height: 25px;
@@ -337,7 +342,6 @@ figcaption strong{
 	margin: 120px 0;
 }
 #multiple_columns .row{
-	position: relative;
 	margin: 40px 0 20px 30px;
 	float:left;
 	width:250px;
@@ -430,7 +434,7 @@ figcaption strong{
 	width:auto;
 	float:left;
 	font-family: Arial, Helvetica, sans-serif;
-	max-width: 500px;
+	max-width: 250px;
 	margin-left: 35px;
 	max-height: 100%;
 }
@@ -504,4 +508,201 @@ figcaption strong{
 }
 #page_owner_info .wrapper .social a:hover{
 	opacity: 0.8;
+}
+
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 	
+header h1{
+	margin-left: 10px;		
+	}
+#three_Columns article{
+	float:none;
+	margin: 30px auto 0 auto;
+	width: 60%;
+	}
+#three_Columns  i {
+	margin-left: 15px;
+	}
+#three_Columns .Update i{
+	margin-left: 120px;
+	margin-top: 30px;
+	}
+#four_column{
+	width:500px;
+}
+#four_column .img-item{
+	margin-left: 25px;
+}
+#four_column .img-item:nth-of-type(3),#four_column .img-item:nth-of-type(4){
+	margin-top: 20px;
+}
+#multiple_columns .column1, #multiple_columns .column2{
+	float:none;
+	max-width: 500px;
+	margin: 30px 0 10px 240px;
+}
+
+.column2 .row{
+	 margin-top: 10px;
+}
+.column2 .row p{
+	width: 100%;
+	padding-top: 10px;
+}
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media  (max-width: 767.98px) {
+	.container{
+		height: 1px;
+		display:none;
+	}
+	header h1, header p{
+		font-size: 20px;
+	}
+	nav{
+		font-size: 13px;
+	}
+	#spacer{
+		height: 100px;
+	}
+	#spacer .search{
+		text-align: center;
+		position:static;
+		padding-top: 20px;
+	}
+	#three_Columns .Update i{
+		margin-left: 22px;
+	}
+	#multiple_columns .column1,#multiple_columns .column2{
+		margin-left: 140px;
+	}
+	footer{
+		height: 620px;
+	}
+	#multiple_columns .column2 img{
+		float:none;
+	}
+	#multiple_columns .column2 .row p{
+		margin-left: 15px;
+	}
+	#three_Columns article {
+		margin-left: 10px;
+	}
+ }
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+	.container{
+		height: 1px;
+		display:none;
+	}
+	header{
+		margin-top: 80px;
+		height: 100px;
+		text-align: center;
+	}
+	header h1{
+		font-size: 30px;
+	}
+	header p{
+		font-size: 13px;
+		margin:auto;
+	}
+	input{
+		width: auto;
+		margin-left: 0;
+	}
+	#spacer{
+		height: 45px;
+	}
+	#spacer p{
+		margin: 12px 0 12px -180px;
+		font-size: 13px;
+		text-align: center;
+		position: static;
+	}
+	#spacer .search{
+		margin: 12px 0  12px 120px;
+	}
+	#spacer .search  input{
+		font-size: 13px;
+	}
+	#three_Columns article{
+		float:none;
+		width: 300px;
+		margin-left: -170px;
+	}
+	#three_Columns .Update{
+		margin-left: -190px;
+	}
+	#four_column{
+		width: auto;
+	}
+	#four_column h2{
+		text-indent: 12px;
+	}
+	#four_column .img-item,h2{
+		width: 200px;
+		float:none;
+		margin: 25px auto 0 auto;
+	}
+	#extra_content{
+		width: auto;
+	}
+	#extra_content .column1, .column2, .column3 {
+		max-width: 300px;
+		margin: 0 auto 15px auto;
+	}
+	#page_owner_info .wrapper .copyright{
+		display: block;
+		text-align: center;
+		width: 100%;
+		margin-left:0 ;
+	}
+	footer{
+		height: 900px;
+	}
+	#page_owner_info .wrapper .social{
+		display: none;
+	}
+	nav ul{
+		display: none;
+	}
+	#nav:checked ~ul{
+		display: block;
+		z-index: 9999;
+		position: absolute;
+		right: 15px;
+		top:45px;
+		width: 120px;
+	}
+	nav{
+		margin: 0;
+	}
+	nav a{
+		color: #fff;
+	}
+	nav ul li{
+		display: block;
+		float:none;
+		width: 100%;
+		text-align: left;
+		background: #b6b4ea;
+		text-indent: 20px;
+	}
+	nav>label>img{
+		margin-top: 15px;
+	}
+	nav>ul>li{
+		margin-left: 0;
+	}
+	nav > ul li ul li{
+		display: block;
+		float: none;
+	}
+	nav >ul li ul{
+		display: block;
+	}
 }
